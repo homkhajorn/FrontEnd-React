@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'bulma/css/bulma.css';
+import './css/mystyle.css';
+
+import App from './App';
+//import Header from './components/Header.react';
+
+import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter } from 'react-router-dom';
+
+  ReactDOM.render((
+    <BrowserRouter>
+    <App />
+  </BrowserRouter>
+  ), document.getElementById('root'))
+
+
+registerServiceWorker();
